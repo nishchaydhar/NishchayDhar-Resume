@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishchay Dhar | Digital Marketer & Content Creator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Inter for sleek typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Gamification Libraries -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <!-- Custom Gamer Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Universe Coverpage (Topmost Layer) -->
+    <div id="universe-cover">
+        <h1 class="cover-title">Build with Nish</h1>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Advanced Space Elements -->
+    <div id="space-elements">
+        <!-- Solar System Orbits -->
+        <div id="solar-system">
+            <div class="orbit orbit-1">
+                <div class="planet planet-mercury"></div>
+            </div>
+            <div class="orbit orbit-2">
+                <div class="planet planet-venus"></div>
+            </div>
+            <div class="orbit orbit-3">
+                <div class="planet planet-earth"></div>
+            </div>
+            <div class="orbit orbit-4">
+                <div class="planet planet-mars"></div>
+            </div>
+            <div class="orbit orbit-5">
+                <div class="planet planet-jupiter"></div>
+            </div>
+            <div class="orbit orbit-6">
+                <div class="planet planet-saturn"></div>
+            </div>
+            <div class="orbit orbit-7">
+                <div class="planet planet-uranus"></div>
+            </div>
+            <div class="orbit orbit-8">
+                <div class="planet planet-neptune"></div>
+            </div>
+        </div>
+        
+        <!-- Shooting Stars -->
+        <div id="shooting-stars">
+            <div class="shooting-star s1"></div>
+            <div class="shooting-star s2"></div>
+            <div class="shooting-star s3"></div>
+        </div>
+        
+        <!-- Distant Galaxy -->
+        <div class="galaxy-spiral"></div>
+        
+        <!-- Space Debris (Asteroids) -->
+        <div class="debris d1"></div>
+        <div class="debris d2"></div>
+        <div class="debris d3"></div>
+        <div class="debris d4"></div>
+        <div class="debris d5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="container nav-container">
+            <div class="logo">ND.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero section">
+        <div class="glow-orb orb-1"></div>
+        <div class="container hero-content">
+            <p class="greeting fade-up">Hello, I'm</p>
+            <h1 class="hero-title fade-up">Nishchay Dhar</h1>
+            <h2 class="hero-subtitle fade-up">I am a <span id="typed-text"></span></h2>
+            
+            <p class="hero-bio fade-up">
+                Dual-degree student at IIM Bangalore and University of Lucknow, with a passion for digital marketing, storytelling and brand strategy.
+            </p>
+            
+            <!-- Gamer HUD / Player Stats from LinkedIn -->
+            <div class="player-hud fade-up">
+                <div class="hud-stat">
+                    <span class="hud-label">LINKEDIN NETWORK</span>
+                    <span class="hud-value">2,900+ <span class="hud-sub">Followers</span></span>
+                </div>
+                <div class="hud-stat">
+                    <span class="hud-label">CONTENT PUBLISHED</span>
+                    <span class="hud-value">80+ <span class="hud-sub">Posts</span></span>
+                </div>
+                <div class="hud-stat special-ability">
+                    <span class="hud-label">TOP SKILL</span>
+                    <span class="hud-value">Leadership</span>
+                </div>
+            </div>
+
+            <div class="cta-group fade-up mt-4">
+                <a href="#projects" class="btn btn-primary">View Quest Log</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="about section">
+        <div class="container grid-container">
+            <div class="about-text scroll-reveal">
+                <h2 class="section-heading">About Me</h2>
+                <p>I build a personal brand through content creation and creator education, blending analytical thinking with creative execution to craft impactful digital narratives.</p>
+                <p>Beyond digital strategy, I have a strong interest in User-Generated Content (UGC) and enjoy listening to R&B music, playing the guitar, and traveling.</p>
+            </div>
+            
+            <div class="about-stats scroll-reveal">
+                <div class="glass-card tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                    <h3>Core Skills</h3>
+                    <ul class="tag-list">
+                        <li>Digital Strategy</li>
+                        <li>Personal Branding</li>
+                        <li>Storytelling</li>
+                        <li>Content Creation</li>
+                        <li>Social Media Management</li>
+                        <li>UGC (User Generated Content)</li>
+                        <li>Video Editing</li>
+                        <li>Brand Identity</li>
+                        <li>Copywriting</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-card tilt-card mt-4" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                    <h3>Languages</h3>
+                    <ul class="tag-list">
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>German</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="glow-orb orb-2"></div>
+        <div class="container">
+            <h2 class="section-heading text-center scroll-reveal">Experience</h2>
+            
+            <div class="timeline">
+                
+                <!-- BuildWithNish -->
+                <div class="timeline-item scroll-reveal flex-row">
+                    <div class="timeline-date">
+                        <span>June - Present</span>
+                    </div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>Content Creator & Founder</h3>
+                        <h4>BuildWithNish</h4>
+                        <p>Building my personal brand <a href="#" class="inline-link">@buildwithnish</a> (Instagram), where I create storytelling-led content on creator growth, personal branding, and digital strategy.</p>
+                    </div>
+                </div>
+
+                <!-- Healing Up -->
+                <div class="timeline-item scroll-reveal flex-row">
+                    <div class="timeline-date">
+                        <span>July - Present</span>
+                    </div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>LinkedIn & Social Media Manager</h3>
+                        <h4>Healing Up</h4>
+                        <p>Managed LinkedIn and social media strategy, driving digital growth and managing webinars that promoted youth mental health and emotional wellbeing.</p>
+                    </div>
+                </div>
+
+                <!-- Maximally -->
+                <div class="timeline-item scroll-reveal flex-row">
+                    <div class="timeline-date">
+                        <span>July - September</span>
+                    </div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>Social Media & Content Intern</h3>
+                        <h4>Maximally</h4>
+                        <p>Developed and executed digital campaigns that strengthened brand identity and audience engagement, contributing to strategic communication for hackathon events.</p>
+                    </div>
+                </div>
+
+                <!-- INNOVARA -->
+                <div class="timeline-item scroll-reveal flex-row">
+                    <div class="timeline-date">
+                        <span>September</span>
+                    </div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>Video Editor & Pitch Winner</h3>
+                        <h4>INNOVARA - EMPORIUM</h4>
+                        <p>Shot, edited and produced videos for LUBEC for the EMPORIUM event, winning the business pitch presentation by combining strategic storytelling with visual communication.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-heading text-center scroll-reveal">Education</h2>
+            
+            <div class="grid-container auto-fit">
+                <div class="edu-card glass-card hover-glow scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Indian Institute of Management Bangalore</h3>
+                    <h4>BBA in Digital Business and Entrepreneurship</h4>
+                    <span class="edu-date">2025 - 2028 (Expected)</span>
+                    <p>Pursuing a specialized degree focusing on strategic growth, digital narratives, and entrepreneurial leadership.</p>
+                </div>
+                
+                <div class="edu-card glass-card hover-glow scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+                    <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+                    <h3>University of Lucknow</h3>
+                    <h4>Bachelor of Business Administration (BBA)</h4>
+                    <span class="edu-date">2025 - 2028 (Expected)</span>
+                    <p>Balancing core administration studies alongside IIM Bangalore. Developed a strong foundation in business management and quantitative growth models.</p>
+                </div>
+
+                <div class="edu-card glass-card hover-glow scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <h3>Boys' High School and College, Prayagraj</h3>
+                    <h4>Intermediate (Class XII)</h4>
+                    <span class="edu-date">Completed 2024</span>
+                    <p>Actively involved in extra-curricular activities and debating. Winner of the Inter-House Debate Competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="glow-orb orb-3"></div>
+        <div class="container">
+            <h2 class="section-heading text-center scroll-reveal">Projects & Initiatives</h2>
+            
+            <div class="grid-container two-col">
+                
+                <div class="project-card glass-card hover-glow scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="project-content">
+                        <h3>The Prompt Protocol</h3>
+                        <p>Created and hosted a 30-minute AI masterclass for business students and professionals focusing on AI usage and effective prompt engineering.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card hover-glow scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="project-content">
+                        <h3>2026 Sidequests</h3>
+                        <p>An ongoing year-long personal development project dedicated to completing a unique, new challenge every single week.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Gamified Trophies Section (LinkedIn Data) -->
+            <h2 class="section-heading text-center scroll-reveal mt-4" style="margin-top: 80px;">Unlocked Trophies</h2>
+            <div class="trophy-grid">
+                
+                <div class="trophy-badge scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="trophy-icon gold"><i class="fa-solid fa-trophy"></i></div>
+                    <h4>1st Runner Up in Pitch Tank</h4>
+                    <p>NOVA '25 @ IIM Bangalore</p>
+                </div>
+
+                <div class="trophy-badge scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="trophy-icon silver"><i class="fa-solid fa-medal"></i></div>
+                    <h4>Illusion Inc Finalist</h4>
+                    <p>NOVA '25 Shared 2nd Runner Up</p>
+                </div>
+
+                <div class="trophy-badge scroll-reveal tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="trophy-icon bronze"><i class="fa-solid fa-fire"></i></div>
+                    <h4>Viral Storyteller</h4>
+                    <p>High Engagement Streak Achieved</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. Content Feed (Interactive Social Section) -->
+    <section id="content-feed" class="content-feed section border-top">
+        <div class="glow-orb orb-1"></div> <!-- Repurpose orb class for glow -->
+        <div class="container">
+            <h2 class="section-heading text-center scroll-reveal">Content Feed</h2>
+            <p class="text-center scroll-reveal" style="color: var(--text-muted); margin-bottom: 50px;">Real insights. Simulated engagement. <br>Interact below, or jump to the actual posts on LinkedIn.</p>
+            
+            <div class="feed-container">
+                
+                <!-- Social Post 1 (Viral Storytelling) -->
+                <div class="social-card glass-card scroll-reveal">
+                    <div class="social-header">
+                        <div class="social-avatar">ND</div>
+                        <div class="social-meta">
+                            <h4>Nishchay Dhar</h4>
+                            <p>Digital Business & Entrepreneurship</p>
+                            <span class="social-time">1w • <i class="fa-solid fa-earth-americas"></i></span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/nishchay-dhar-0b8933319" target="_blank" class="social-connect"><i class="fa-solid fa-plus"></i> Follow</a>
+                    </div>
+                    
+                    <div class="social-body">
+                        <p>How I learned to slow down with chai. ☕</p>
+                        <p><br>In the relentless pursuit of growth—whether building the #InboundEngine or pushing for the next hackathon win—it's easy to forget that strategy requires stillness.</p>
+                        <p>Taking 15 minutes away from the screens to just brew and drink tea isn't slacking. It's when the best ideas happen.</p>
+                        <span class="social-hashtags">#storytelling #mentalhealth #backandraw #growth</span>
+                    </div>
+
+                    <div class="social-stats">
+                        <span><i class="fa-solid fa-thumbs-up" style="color:var(--accent-secondary)"></i> <i class="fa-solid fa-lightbulb" style="color:#FFD700"></i> 1,240</span>
+                        <span>42 comments • 18 reposts</span>
+                    </div>
+
+                    <div class="social-actions">
+                        <button class="action-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> <span>Like</span></button>
+                        <button class="action-btn"><i class="fa-regular fa-comment"></i> <span>Comment</span></button>
+                        <button class="action-btn"><i class="fa-solid fa-share"></i> <span>Share</span></button>
+                        <button class="action-btn"><i class="fa-solid fa-paper-plane"></i> <span>Send</span></button>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/nishchay-dhar-0b8933319" target="_blank" class="btn btn-secondary full-width-btn mt-4">View Original on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Social Post 2 (Strategy) -->
+                <div class="social-card glass-card scroll-reveal mt-4">
+                    <div class="social-header">
+                        <div class="social-avatar">ND</div>
+                        <div class="social-meta">
+                            <h4>Nishchay Dhar</h4>
+                            <p>Content Creator & Founder @ BuildWithNish</p>
+                            <span class="social-time">3w • <i class="fa-solid fa-earth-americas"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-body">
+                        <p>Building an audience isn't about shouting into the void. It's about engineering the 'Inbound Engine'. 🚀</p>
+                        <p><br>Over the past few months, I've systematized how founders can use organic content to not just build a brand, but actually drive strategic inbound leads.</p>
+                        <p>It boils down to three pillars: Value, Vulnerability, and Volume. Are you leveraging all three?</p>
+                        <span class="social-hashtags">#personalbranding #inboundmarketing #digitalstrategy</span>
+                    </div>
+
+                    <div class="social-stats">
+                        <span><i class="fa-solid fa-rocket" style="color:var(--accent-primary)"></i> <i class="fa-solid fa-heart" style="color:#ff3b30"></i> 894</span>
+                        <span>112 comments • 30 reposts</span>
+                    </div>
+
+                    <div class="social-actions">
+                        <button class="action-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> <span>Like</span></button>
+                        <button class="action-btn"><i class="fa-regular fa-comment"></i> <span>Comment</span></button>
+                        <button class="action-btn"><i class="fa-solid fa-share"></i> <span>Share</span></button>
+                        <button class="action-btn"><i class="fa-solid fa-paper-plane"></i> <span>Send</span></button>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/nishchay-dhar-0b8933319" target="_blank" class="btn btn-secondary full-width-btn mt-4">View Original on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer & Contact -->
+    <footer id="contact" class="footer border-top">
+        <div class="container text-center footer-content">
+            <h2 class="section-heading">Let's Connect</h2>
+            <p class="contact-subtext">Ready to collaborate or talk digital strategy? Reach out.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:2nishchay.dhar7@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>2nishchay.dhar7@gmail.com</span>
+                </a>
+                <a href="tel:+918960445730" class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 8960445730</span>
+                </a>
+            </div>
+            
+            <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/nishchay-dhar-Ob8933319/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/buildwithnish?igsh=MW52eGhucmdlNnJoag==" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            
+            <div class="copyright mt-4">
+                <p>&copy; 2026 Nishchay Dhar. Designed with purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 9. AI Virtual Avatar (Strategic Creator) -->
+    <div class="chatbot-container" id="chatbot-wrapper">
+        <div class="chatbot-tooltip">Hey! Chat with my AI Avatar 👋</div>
+        
+        <button id="chatbot-toggle" class="chatbot-toggle shadow-glow">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        
+        <div id="chatbot-window" class="chatbot-window glass-card">
+            <div class="chatbot-header">
+                <div class="bot-avatar">ND</div>
+                <div>
+                    <h4>Nishchay AI</h4>
+                    <p>The Strategic Creator</p>
+                </div>
+                <button id="chatbot-close" class="chatbot-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="msg bot-msg">
+                    Hey! I'm Nishchay's AI digital twin (shoutout to my Prompt Protocol masterclass). I can tell you about his dual degrees, UGC strategies, or how we treat career goals like sidequests. What do you want to know?
+                </div>
+            </div>
+            
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Ask about strategy, skills, R&B...">
+                <button id="chatbot-send"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gamification & Animations Script -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // 1. Interactive Custom Cursor
+        const cursorDot = document.querySelector(".cursor-dot");
+        const cursorOutline = document.querySelector(".cursor-outline");
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+            document.body.classList.add('custom-cursor-active');
+            
+            window.addEventListener("mousemove", function (e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+
+                // Add slight delay to outline for a fluid "trailing" effect
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 150, fill: "forwards" });
+            });
+
+            const interactables = document.querySelectorAll('a, button, .tilt-card, .timeline-content');
+            interactables.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.classList.add('cursor-hovering');
+                    if(el.classList.contains('tilt-card')) cursorDot.classList.add('cursor-hovering-card');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.classList.remove('cursor-hovering');
+                    cursorDot.classList.remove('cursor-hovering-card');
+                });
+            });
+        }
+
+        // 2. Typing Effect (Hero Section)
+        var typed = new Typed('#typed-text', {
+            strings: ['Digital Marketer.', 'Brand Strategist.', 'Storyteller.', 'Content Creator.', 'Leader.'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1500,
+            loop: true,
+            cursorChar: '_',
+        });
+
+        // 3. Particles.js initialization - Enchanting Starry Web Theme
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 250, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": ["#b026ff", "#00e5ff", "#ffffff"] }, /* Web Theme */
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true, "anim": {"enable": true, "speed": 1, "opacity_min": 0.1, "sync": false} }, // Less visible junctions
+                "size": { "value": 1.5, "random": true }, // Very small nodes so lines are more prominent
+                "line_linked": { "enable": true, "distance": 180, "color": "#00e5ff", "opacity": 0.4, "width": 1.5 },
+                "move": { "enable": true, "speed": 0.9, "direction": "none", "random": true, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": {
+                    "grab": { "distance": 350, "line_linked": { "opacity": 0.8, "color": "#b026ff" } }, // Purple web on hover
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // 3.5 Universe Coverpage Scroll Animation
+        gsap.to("#universe-cover", {
+            scrollTrigger: {
+                trigger: "#universe-cover",
+                start: "top top",
+                end: "bottom top", // Dissolves as it scrolls out of view
+                scrub: 1, 
+            },
+            scale: 1.5, // Subtle zoom 
+            opacity: 0, 
+            ease: "power1.inOut"
+        });
+
+        // 4. Space Elements GSAP Animation (Debris Only)
+        
+        // Floating Debris Field
+        gsap.to(".d1", { x: "20vw", y: "-30vh", rotation: 360, duration: 45, ease: "none", repeat: -1, yoyo: true });
+        gsap.to(".d2", { x: "-30vw", y: "40vh", rotation: -360, duration: 60, ease: "none", repeat: -1, yoyo: true });
+        gsap.to(".d3", { x: "40vw", y: "10vh", rotation: 180, duration: 50, ease: "none", repeat: -1, yoyo: true });
+        gsap.to(".d4", { x: "-20vw", y: "-20vh", rotation: -180, duration: 55, ease: "none", repeat: -1, yoyo: true });
+        gsap.to(".d5", { x: "15vw", y: "30vh", rotation: 270, duration: 40, ease: "none", repeat: -1, yoyo: true });
+
+        // 5. Advanced GSAP Hero Entrance (Staggered Pop)
+        gsap.fromTo(".fade-up", 
+            { y: 50, opacity: 0, scale: 0.95 },
+            { y: 0, opacity: 1, scale: 1, duration: 1.2, stagger: 0.2, ease: "elastic.out(1, 0.7)", delay: 0.3 }
+        );
+
+        // Navbar Blur on Scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 5. Scroll Reveals (Enhanced with slight scaling for Gamification)
+        const revealElements = document.querySelectorAll(".scroll-reveal");
+        revealElements.forEach(el => {
+            gsap.fromTo(el, 
+                { y: 60, opacity: 0, scale: 0.98 },
+                { 
+                    y: 0, opacity: 1, scale: 1, duration: 0.8, ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 85%", // Trigger when element is 85% down the viewport
+                        toggleActions: "play none none reverse"
+                    }
+                }
+            );
+        });
+
+        // 6. Interactive Social Feed Like Buttons
+        const likeBtns = document.querySelectorAll('.like-btn');
+        likeBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.toggle('liked');
+                const icon = this.querySelector('i');
+                const text = this.querySelector('span');
+                
+                if(this.classList.contains('liked')) {
+                    icon.classList.remove('fa-regular');
+                    icon.classList.add('fa-solid');
+                    text.innerText = "Liked";
+                    
+                    // Small GSAP pop animation on like
+                    gsap.fromTo(icon, {scale: 1.5}, {scale: 1, duration: 0.3, ease: "back.out(1.7)"});
+                } else {
+                    icon.classList.remove('fa-solid');
+                    icon.classList.add('fa-regular');
+                    text.innerText = "Like";
+                }
+            });
+        });
+
+        // 7. Simulated AI Virtual Avatar Logic
+        const chatWrapper = document.getElementById('chatbot-wrapper');
+        const chatToggle = document.getElementById('chatbot-toggle');
+        const chatWindow = document.getElementById('chatbot-window');
+        const chatClose = document.getElementById('chatbot-close');
+        const chatInput = document.getElementById('chatbot-input');
+        const chatSend = document.getElementById('chatbot-send');
+        const chatMessages = document.getElementById('chatbot-messages');
+
+        // Floating Avatar Logic
+        let floatTween;
+        let isChatOpen = false;
+
+        function getRandomPosition() {
+            // Constrained to right edge: X is always 0, Y moves up and down
+            const maxY = window.innerHeight - 150; 
+            
+            return {
+                x: 0,
+                y: -Math.random() * maxY
+            };
+        }
+
+        function floatAvatar() {
+            if (isChatOpen) return;
+            
+            const nextPos = getRandomPosition();
+            
+            floatTween = gsap.to(chatWrapper, {
+                x: nextPos.x,
+                y: nextPos.y,
+                duration: 5 + Math.random() * 5, // Random 5 to 10 seconds per translation
+                ease: "sine.inOut",
+                onComplete: floatAvatar // Loop indefinitely
+            });
+        }
+
+        // Start floating after initial load
+        setTimeout(floatAvatar, 2500);
+
+        // Freezes the bot when user is trying to click it
+        chatWrapper.addEventListener('mouseenter', () => {
+            if (!isChatOpen && floatTween) {
+                floatTween.pause();
+            }
+        });
+
+        // Resumes floating if user moves mouse away without clicking
+        chatWrapper.addEventListener('mouseleave', () => {
+            if (!isChatOpen && floatTween) {
+                floatTween.play();
+            }
+        });
+
+        // Toggle Chat Window
+        chatToggle.addEventListener('click', () => {
+            isChatOpen = true;
+            if (floatTween) floatTween.kill(); // Stop floating
+            
+            // Zip back to the bottom right anchor smoothly
+            gsap.to(chatWrapper, { x: 0, y: 0, duration: 0.6, ease: "power3.out" });
+
+            chatWrapper.classList.add('chat-active');
+            chatWindow.classList.add('active');
+            chatToggle.style.transform = 'scale(0)';
+        });
+
+        chatClose.addEventListener('click', () => {
+            isChatOpen = false;
+            chatWrapper.classList.remove('chat-active');
+            chatWindow.classList.remove('active');
+            chatToggle.style.transform = 'scale(1)';
+            
+            // Resume wandering
+            setTimeout(floatAvatar, 1000);
+        });
+
+        // Chatbot Persona Responses (Deep Training: "The Strategic Creator")
+        const botBrain = {
+            greetings: ["hello", "hi", "hey", "yo", "sup", "howdy"],
+            education: ["education", "degree", "college", "university", "iim", "lucknow", "bba", "study"],
+            experience: ["experience", "work", "job", "intern", "healing up", "buildwithnish", "founder", "cv", "resume"],
+            skills: ["skills", "marketing", "content", "strategy", "ugc", "video", "editing", "storytelling"],
+            hobbies: ["fun", "hobbies", "music", "guitar", "r&b", "travel", "chill", "free time", "hustle", "break"],
+            inbound: ["inbound", "engine", "audience", "growth", "linkedin", "algorithm"],
+            chai: ["chai", "tea", "coffee", "slow down", "burnout", "rest", "stillness"],
+            dislikes: ["dislike", "hate", "pet peeve", "corporate", "buzzwords", "toxic", "grind", "post and forget"],
+            views: ["views", "thoughts", "gen-z", "future", "startup", "culture"],
+            motto: ["motto", "quote", "advice", "risk"]
+        };
+
+        function generateResponse(input) {
+            let lowerInput = input.toLowerCase();
+            
+            if (botBrain.chai.some(word => lowerInput.includes(word))) {
+                return "How I learned to slow down with chai. ☕ Hustle doesn't always build Empires. Taking 15 minutes away from the screens to just brew and drink tea isn't slacking—it's when the best strategic ideas happen. Strategy requires stillness.";
+            }
+            if (botBrain.dislikes.some(word => lowerInput.includes(word))) {
+                return "My biggest pet peeve? Toxic hustle culture and 'post-and-forget' social media strategies. I reject the traditional 24/7 corporate drone mentality without strategy. Let's build organic systems over brute force, and ditch the dry corporate buzzwords.";
+            }
+            if (botBrain.views.some(word => lowerInput.includes(word))) {
+                return "My take on the digital ecosystem? Every Gen-Z founder should have a personal brand acts as an automated lead generator. It’s all about engineering an 'Inbound Engine'. We move fast, but we prioritize value and vulnerability over blind scale.";
+            }
+            if (botBrain.motto.some(word => lowerInput.includes(word))) {
+                return "Action over perfection. Always remember: 'You miss 100% of the shots you don't take'.";
+            }
+            if (botBrain.education.some(word => lowerInput.includes(word))) {
+                return "Taking on the education sidequest: I'm balancing a BBA DBE at IIM Bangalore and a BBA at Lucknow University. It’s an intense grind—analytical quantitative models by day, creative storytelling by night. 🚀";
+            }
+            if (botBrain.experience.some(word => lowerInput.includes(word))) {
+                return "I don't just 'edit videos.' I craft impactful digital narratives backed by analytical insight. Whether I'm managing Healing Up's LinkedIn, founding @buildwithnish, or winning the Big Bull pitch at NOVA '25, I focus on storytelling-led growth.";
+            }
+            if (botBrain.skills.some(word => lowerInput.includes(word))) {
+                return "My stack is at the intersection of data and creativity. Think User-Generated Content (UGC), sharp hooks, and serious retention strategies. I don't just make things look pretty; I build systems and narratives that actually convert.";
+            }
+            if (botBrain.inbound.some(word => lowerInput.includes(word))) {
+                return "The 'Inbound Engine' is a scalable organic system I engineered. It boils down to three pillars: Value, Vulnerability, and Volume. Want me to help you systematize your inbound leads? Hit the contact button!";
+            }
+            if (botBrain.hobbies.some(word => lowerInput.includes(word))) {
+                return "The contrast between intense statistics exams, business pitches, and chilling is stark. When I'm off the clock, I unplug entirely by playing the guitar, listening to R&B, and traveling. Strategy requires that downtime.";
+            }
+            if (botBrain.greetings.some(word => lowerInput.includes(word))) {
+                return "Hey there! Ready to level up? I'm Nishchay's custom AI twin. Ask me about my dual-degrees, my inbound marketing strategies, or my philosophy on slowing down with Chai! ☕";
+            }
+            
+            return "That's an interesting angle! While my Prompt Protocol is strong, I'm best at talking about 'The Inbound Engine', my dual-degrees at IIMB, or why I hate toxic hustle culture. What do you want to dive into?";
+        }
+
+        function appendMessage(sender, text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.classList.add('msg');
+            msgDiv.classList.add(sender === 'user' ? 'user-msg' : 'bot-msg');
+            msgDiv.innerText = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Auto-scroll
+        }
+
+        function handleSend() {
+            const text = chatInput.value.trim();
+            if (text === '') return;
+            
+            // Add user message
+            appendMessage('user', text);
+            chatInput.value = '';
+            
+            // Simulate AI 'typing' delay
+            setTimeout(() => {
+                const response = generateResponse(text);
+                appendMessage('bot', response);
+            }, 600); // 600ms gamer delay
+        }
+
+        chatSend.addEventListener('click', handleSend);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleSend();
+        });
+
+    </script>
+</body>
+</html>
